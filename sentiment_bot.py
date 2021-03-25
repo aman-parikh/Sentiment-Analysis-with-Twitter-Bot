@@ -27,7 +27,7 @@ auth.set_access_token(access_token,access_secret)
 bot=tweepy.API(auth)
 tweets=bot.mentions_timeline()
 class my_tweets:
-    def _init_(self, id, text, sentiment,sender):
+    def __init__(self, id, text, sentiment,sender):
         self.text = text
         self.id = id
         self.sentiment = sentiment
@@ -110,3 +110,5 @@ for i in range(0,len(tweet_sentiment_data)):
  #   str="Your tweet is "
   #  str=str+(twt.sentiment+" @"+twt.sender)
 # bot.update_status(str,twt.id)
+
+
