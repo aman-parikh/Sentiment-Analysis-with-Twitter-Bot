@@ -47,7 +47,7 @@ def classify_direct(score):
     else:
         return "positive"
 import mysql.connector
-db=mysql.connector.connect(host="localhost",user="root",passwd="",database="miniproject")
+db=mysql.connector.connect(host="sql6.freemysqlhosting.net",user="sql6401523",passwd="l8pKRGs83C",database="sql6401523")
 mycursor=db.cursor()
 def respond(polarity,subjectivity,id,sender):
 
